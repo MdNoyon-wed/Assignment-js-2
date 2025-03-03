@@ -4,6 +4,10 @@ document.getElementById("main-card").addEventListener("click",function(){
 
   // console.log("card")
 })
+ 
+// document.getElementById("Back-file").addEventListener("click",function(){
+//   console.log("back")
+// })
 
 
 const allBtn = document.getElementsByClassName("comon-class")
@@ -21,12 +25,6 @@ for(let i = 0 ; i < allBtn.length ; i++){
  allBtn[i].addEventListener("click",function(event){
 
   event.target.disabled = true;
-
-
-
-  // console.log(allBtn[i])
- 
-   
 
   const firstNumber = document.getElementById("first-number").innerText;
   const converted = parseFloat(firstNumber);
@@ -48,7 +46,10 @@ for(let i = 0 ; i < allBtn.length ; i++){
   const history=document.createElement("p")
   history.classList.add('rounded',"p-2","bg-slate-100","border")
 
-  history.textContent="hello"
+  
+   history.textContent= new Date();
+ 
+
   
   historyContiner.appendChild(history)
 
@@ -66,23 +67,7 @@ for(let i = 0 ; i < allBtn.length ; i++){
 
     alert("Board updated Succesfuly");
 
-
-    // if(allBtn[i]){
-
-    //   alert("Board updated Succesfuly")
-
-    // }else{
-
-    //    btnDisabled.setAttribute('disabled',true);
-      
-    // }
-
-    //  alert("Board updated Succesfuly")
-
-
   }
-
-
 
    })
 
@@ -92,6 +77,7 @@ document.getElementById("history-btn").addEventListener("click",function(){
 
 const historyContiner =  document.getElementById("historyContiner");
  historyContiner.textContent=''
+
   // historyContiner.removeChild()
 
   // allChild.appendChild();
