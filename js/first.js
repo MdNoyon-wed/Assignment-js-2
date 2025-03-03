@@ -70,8 +70,6 @@ const historyContiner =  document.getElementById("historyContiner");
   // historyContiner.removeChild()
 
  
-
-
   
 })
 
@@ -83,23 +81,11 @@ const bgColor = document.getElementById("bg-chang").addEventListener("click",fun
  
 })
 
- document.getElementById("logout").addEventListener("click",function(){
-
-  window.location.href="./index.html"
-
-  
-
-})
+ 
 
 
-
-// const NgColor = document.getElementById("bg-chang").addEventListener("click",function(){
-
-//   document.body.style.backgroundColor = '';
 
  
-// })
-
 
 
 
