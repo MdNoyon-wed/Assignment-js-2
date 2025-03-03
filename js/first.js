@@ -1,39 +1,28 @@
 
 document.getElementById("main-card").addEventListener("click",function(){
+
   window.location.href="new.html"
 
-  // console.log("card")
-})
  
-// document.getElementById("Back-file").addEventListener("click",function(){
-//   console.log("back")
-// })
+})
 
 
 const allBtn = document.getElementsByClassName("comon-class")
-//  console.log(allBtn)
-
  
-// console.log(convertedNumber)
-  
 for(let i = 0 ; i < allBtn.length ; i++){
-
-  // console.log(allBtn)
-
-  // allBtn[i]
-
+ 
  allBtn[i].addEventListener("click",function(event){
 
   event.target.disabled = true;
 
   const firstNumber = document.getElementById("first-number").innerText;
   const converted = parseFloat(firstNumber);
-  //  console.log(typeof converted)
+   
 
 
   const seandNumber =document.getElementById("seand-Number").innerText;
   const convetedNumber = parseFloat(seandNumber);
-  //  console.log(typeof convetedNumber)
+ 
 
   const number = converted ;
 
@@ -80,11 +69,39 @@ const historyContiner =  document.getElementById("historyContiner");
 
   // historyContiner.removeChild()
 
-  // allChild.appendChild();
+ 
 
 
   
 })
+
+const colors =["red","green","blue"]
+const bgColor = document.getElementById("bg-chang").addEventListener("click",function(){
+
+  document.body.style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
+
+ 
+})
+
+ document.getElementById("Back-file").addEventListener("click",function(){
+
+  window.location.href="../index.html"
+
+  
+
+})
+
+
+
+// const NgColor = document.getElementById("bg-chang").addEventListener("click",function(){
+
+//   document.body.style.backgroundColor = '';
+
+ 
+// })
+
+
+
 
  
  
