@@ -75,7 +75,7 @@ const historyContiner =  document.getElementById("historyContiner");
   
 })
 
-const colors =["red","green","blue"]
+const colors =["red","green","blue","Aquamarine","Brown","FloralWhite","DarkViolet"]
 const bgColor = document.getElementById("bg-chang").addEventListener("click",function(){
 
   document.body.style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
@@ -83,9 +83,9 @@ const bgColor = document.getElementById("bg-chang").addEventListener("click",fun
  
 })
 
- document.getElementById("Back-file").addEventListener("click",function(){
+ document.getElementById("logout").addEventListener("click",function(){
 
-  window.location.href="../index.html"
+  window.location.href="./index.html"
 
   
 
